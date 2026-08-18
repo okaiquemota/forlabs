@@ -1,4 +1,4 @@
-# ForLabs — Landing Page
+# ForLabs - Landing Page
 
 Site institucional do ForLabs: apresenta o produto, mostra as telas principais (dashboard, testes, relatórios, pigmentos) e leva o visitante para o app em [app.forlabs.com.br](https://app.forlabs.com.br). Publicado em [www.forlabs.com.br](https://www.forlabs.com.br) via GitHub Pages (`CNAME`).
 
