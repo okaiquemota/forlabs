@@ -1,151 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Termos de Uso — ForLabs</title>
-<link rel="icon" href="icone.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #FBFBFD;
-    --bg-soft: #F5F5F7;
-    --white: #FFFFFF;
-    --border: #D2D2D7;
-    --text: #1D1D1F;
-    --text-dim: #86868B;
-    --blue: #2994F2;
-    --font: -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { 
-    background: var(--bg); 
-    color: var(--text); 
-    font-family: var(--font); 
-    line-height: 1.6; 
-    letter-spacing: -0.01em;
-    -webkit-font-smoothing: antialiased; 
-    padding-bottom: 60px; 
-  }
-  a { text-decoration: none; color: var(--blue); transition: opacity 0.2s; }
-  a:hover { opacity: 0.8; }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Termos de Uso — ForLabs</title>
+  <meta name="theme-color" content="#f6f8fb">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" type="image/svg+xml" href="assets/img/forlabs.svg">
 
-  /* ===== NAV IGUAL A INDEX (ALTURA CORRIGIDA) ===== */
-  nav {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: rgba(251,251,253,0.8);
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    border-bottom: 1px solid rgba(210,210,215,0.5);
-  }
-  .nav-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 32px;
-    max-width: 1080px;
-    margin: 0 auto;
-    min-height: 62px; /* Garante a altura idêntica à index com botão */
-  }
-  @media (max-width: 680px) {
-    .nav-inner { 
-      padding: 12px 20px; 
-      min-height: 58px; /* Mantém a proporção exata no mobile */
-    }
-  }
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: -0.02em;
-    color: var(--text);
-  }
-  .logo:hover { opacity: 1; }
-  .logo-mark {
-    width: 28px; 
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-  .logo-mark img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  /* ===== CONTEÚDO ===== */
-  .container { max-width: 760px; margin: 60px auto; padding: 0 24px; }
-  .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 0.9rem; font-weight: 500; margin-bottom: 32px; }
-  h1 { font-size: clamp(2rem, 4vw, 2.5rem); font-weight: 700; letter-spacing: -0.04em; margin-bottom: 8px; }
-  .updated { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 40px; display: block; }
-  h2 { font-size: 1.3rem; font-weight: 600; margin: 40px 0 16px; letter-spacing: -0.02em; }
-  p, li { color: var(--text-dim); font-size: 1rem; margin-bottom: 16px; }
-  ul { margin-left: 24px; margin-bottom: 16px; }
-</style>
+  <link rel="preload" href="assets/vendor/inter/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/base.css">
 </head>
-<body>
+<body class="p-legal">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<nav>
-  <div class="nav-inner">
-    <a href="/" class="logo">
-      <span class="logo-mark">
-        <img src="icone.svg" alt="ForLabs">
-      </span>
-      <span class="logo-text">ForLabs</span>
-    </a>
-  </div>
-</nav>
+  <header class="p-header is-solid">
+    <div class="container p-header-inner">
+      <a class="p-brand" href="./" aria-label="ForLabs, início"><img src="assets/img/forlabs.svg" alt="" width="32" height="32"><span class="p-brand-name"><span>For</span>Labs</span></a>
+      <div class="p-header-actions">
+        <a class="btn btn-ghost btn-sm" href="./"><i class="bi bi-arrow-left" aria-hidden="true"></i>Voltar ao site</a>
+        <a class="btn btn-primary btn-sm" href="https://app.forlabs.com.br/">Entrar</a>
+      </div>
+    </div>
+  </header>
 
-<div class="container">
-  <a href="/" class="back-btn">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-    Voltar para a página inicial
-  </a>
+  <main id="conteudo" class="container p-doc">
+    <h1>Termos de Uso</h1>
+    <span class="updated">Última atualização: Julho de 2026</span>
 
-  <h1>Termos de Uso</h1>
-  <span class="updated">Última atualização: Julho de 2026</span>
+    <h2>1. Aceitação dos Termos</h2>
+    <p>Ao acessar e utilizar o sistema ForLabs (o "SaaS"), você concorda em cumprir e ficar vinculado a estes Termos de Uso. Caso não concorde com qualquer parte destes termos, você não deverá utilizar a plataforma.</p>
 
-  <h2>1. Aceitação dos Termos</h2>
-  <p>Ao acessar e utilizar o sistema ForLabs (o "SaaS"), você concorda em cumprir e ficar vinculado a estes Termos de Uso. Caso não concorde com qualquer parte destes termos, você não deverá utilizar a plataforma.</p>
+    <h2>2. Descrição do Serviço</h2>
+    <p>O ForLabs é uma plataforma de gestão e controle de qualidade laboratorial oferecida como Software as a Service (SaaS). A ferramenta permite o cadastro de testes dinâmicos, análises de pigmentos, gestão de manuais e emissão de laudos. O sistema atua de forma isolada para cada empresa cliente (multi-tenant).</p>
 
-  <h2>2. Descrição do Serviço</h2>
-  <p>O ForLabs é uma plataforma de gestão e controle de qualidade laboratorial oferecida como Software as a Service (SaaS). A ferramenta permite o cadastro de testes dinâmicos, análises de pigmentos, gestão de manuais e emissão de laudos. O sistema atua de forma isolada para cada empresa cliente (multi-tenant).</p>
+    <h2>3. Contas e Segurança</h2>
+    <ul>
+      <li>É responsabilidade da empresa cliente manter a confidencialidade de suas credenciais de acesso e das contas de seus colaboradores (Analistas, Administradores, etc.).</li>
+      <li>Todas as atividades realizadas sob uma conta de usuário são de total responsabilidade da empresa titular. O ForLabs registra trilhas de auditoria para garantir o controle interno do cliente.</li>
+    </ul>
 
-  <h2>3. Contas e Segurança</h2>
-  <ul>
-    <li>É responsabilidade da empresa cliente manter a confidencialidade de suas credenciais de acesso e das contas de seus colaboradores (Analistas, Administradores, etc.).</li>
-    <li>Todas as atividades realizadas sob uma conta de usuário são de total responsabilidade da empresa titular. O ForLabs registra trilhas de auditoria para garantir o controle interno do cliente.</li>
-  </ul>
+    <h2>4. Propriedade dos Dados</h2>
+    <p>Os dados inseridos no ForLabs (resultados de laudos, fotos de amostras, PDFs de manuais, dados de pigmentos) pertencem integralmente a você e à sua empresa. Nós apenas fornecemos a infraestrutura tecnológica para armazenamento e processamento desses dados, garantindo a sua confidencialidade.</p>
 
-  <h2>4. Propriedade dos Dados</h2>
-  <p>Os dados inseridos no ForLabs (resultados de laudos, fotos de amostras, PDFs de manuais, dados de pigmentos) pertencem integralmente a você e à sua empresa. Nós apenas fornecemos a infraestrutura tecnológica para armazenamento e processamento desses dados, garantindo a sua confidencialidade.</p>
+    <h2>5. Disponibilidade e Backups</h2>
+    <p>Trabalhamos para garantir que a plataforma tenha alta disponibilidade (uptime). O sistema permite que os Administradores de cada empresa façam o download (backup) da base de dados bruta em arquivos CSV ou JSON a qualquer momento pelo painel de controle.</p>
 
-  <h2>5. Disponibilidade e Backups</h2>
-  <p>Trabalhamos para garantir que a plataforma tenha alta disponibilidade (uptime). O sistema permite que os Administradores de cada empresa façam o download (backup) da base de dados bruta em arquivos CSV ou JSON a qualquer momento pelo painel de controle.</p>
+    <h2>6. Cancelamento e Rescisão</h2>
+    <p>A empresa cliente pode cancelar o serviço a qualquer momento, mediante solicitação através dos canais oficiais de suporte. Recomendamos que o Administrador realize o backup completo dos dados (CSV/JSON) antes da efetivação do cancelamento. Após o encerramento da conta, os dados serão tratados conforme descrito na nossa Política de Privacidade, podendo ser excluídos definitivamente dos nossos servidores mediante solicitação.</p>
 
-  <h2>6. Cancelamento e Rescisão</h2>
-  <p>A empresa cliente pode cancelar o serviço a qualquer momento, mediante solicitação através dos canais oficiais de suporte. Recomendamos que o Administrador realize o backup completo dos dados (CSV/JSON) antes da efetivação do cancelamento. Após o encerramento da conta, os dados serão tratados conforme descrito na nossa Política de Privacidade, podendo ser excluídos definitivamente dos nossos servidores mediante solicitação.</p>
+    <h2>7. Limitação de Responsabilidade</h2>
+    <p>O ForLabs é fornecido "como está" ("as is"). Empenhamo-nos ao máximo para manter a plataforma disponível, segura e livre de erros, mas não garantimos disponibilidade ininterrupta. Não nos responsabilizamos por danos indiretos decorrentes de: (i) indisponibilidade temporária do serviço por motivos técnicos, de manutenção ou de terceiros (provedores de infraestrutura); (ii) uso inadequado da plataforma pela empresa cliente ou seus colaboradores; ou (iii) veracidade, precisão ou adequação técnica dos dados, testes e laudos inseridos pelos próprios usuários do laboratório.</p>
 
-  <h2>7. Limitação de Responsabilidade</h2>
-  <p>O ForLabs é fornecido "como está" ("as is"). Empenhamo-nos ao máximo para manter a plataforma disponível, segura e livre de erros, mas não garantimos disponibilidade ininterrupta. Não nos responsabilizamos por danos indiretos decorrentes de: (i) indisponibilidade temporária do serviço por motivos técnicos, de manutenção ou de terceiros (provedores de infraestrutura); (ii) uso inadequado da plataforma pela empresa cliente ou seus colaboradores; ou (iii) veracidade, precisão ou adequação técnica dos dados, testes e laudos inseridos pelos próprios usuários do laboratório.</p>
+    <h2>8. Propriedade Intelectual</h2>
+    <p>A marca ForLabs, seus logotipos, código-fonte, design de interface e estrutura de software são de propriedade exclusiva da Movcode. É proibida a cópia, engenharia reversa ou distribuição não autorizada do sistema.</p>
 
-  <h2>8. Propriedade Intelectual</h2>
-  <p>A marca ForLabs, seus logotipos, código-fonte, design de interface e estrutura de software são de propriedade exclusiva da Movcode. É proibida a cópia, engenharia reversa ou distribuição não autorizada do sistema.</p>
+    <h2>9. Alterações destes Termos</h2>
+    <p>Estes Termos de Uso podem ser atualizados periodicamente para refletir melhorias na plataforma ou mudanças legais. Alterações relevantes serão comunicadas aos Administradores das empresas clientes pelos canais oficiais (e-mail cadastrado ou aviso no sistema). O uso continuado da plataforma após uma atualização representa a aceitação dos novos termos.</p>
 
-  <h2>9. Alterações destes Termos</h2>
-  <p>Estes Termos de Uso podem ser atualizados periodicamente para refletir melhorias na plataforma ou mudanças legais. Alterações relevantes serão comunicadas aos Administradores das empresas clientes pelos canais oficiais (e-mail cadastrado ou aviso no sistema). O uso continuado da plataforma após uma atualização representa a aceitação dos novos termos.</p>
+    <h2>10. Foro e Legislação Aplicável</h2>
+    <p>Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da comarca de Ribeirão Preto, Estado de São Paulo, para dirimir quaisquer dúvidas ou controvérsias oriundas deste documento, com renúncia expressa a qualquer outro.</p>
+  </main>
 
-  <h2>10. Foro e Legislação Aplicável</h2>
-  <p>Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da comarca de Ribeirão Preto, Estado de São Paulo, para dirimir quaisquer dúvidas ou controvérsias oriundas deste documento, com renúncia expressa a qualquer outro.</p>
-</div>
-
+  <footer class="p-footer">
+    <div class="container">
+      <div class="p-footer-bottom">
+        <span>© 2026 ForLabs · <a href="termos">Termos de Uso</a> · <a href="privacidade">Privacidade</a></span>
+        <span>Um produto <a href="https://movcode.com.br" target="_blank" rel="noopener">MovCode</a></span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
