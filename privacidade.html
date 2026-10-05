@@ -27,39 +27,72 @@
 
   <main id="conteudo" class="container p-doc">
     <h1>Política de Privacidade</h1>
-    <span class="updated">Última atualização: Julho de 2026</span>
+    <span class="updated">Última atualização: outubro de 2026</span>
 
-    <p>A sua privacidade e a segurança dos dados do seu laboratório são prioridades máximas para nós. Esta Política de Privacidade explica como o ForLabs, plataforma operada pela Movcode, coleta, utiliza e protege as informações de acordo com a Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018).</p>
+    <p>Esta Política explica como o ForLabs trata dados pessoais no site institucional (forlabs.com.br) e no sistema (app.forlabs.com.br), de acordo com a Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018).</p>
 
-    <h2>1. Quais informações coletamos</h2>
+    <h2>1. Quem somos</h2>
+    <p>O ForLabs é oferecido sob a marca MovCode por Kaique Henrique Alves Mota, pessoa física, com domicílio em Ribeirão Preto/SP (neste documento, “MovCode”). Contato: <a href="mailto:kaiqueham@gmail.com">kaiqueham@gmail.com</a>.</p>
+    <p>Nos dados que a empresa cliente insere no sistema (registros do laboratório e contas da equipe), a empresa cliente é a controladora e a MovCode atua como operadora, tratando esses dados apenas para prestar o serviço contratado. Nos dados de visitantes do site e de contatos comerciais, a MovCode é a controladora.</p>
+
+    <h2>2. Quais dados tratamos</h2>
     <ul>
-      <li><strong>Dados de Conta:</strong> Nome, e-mail e cargo dos usuários cadastrados no sistema.</li>
-      <li><strong>Dados Operacionais:</strong> Informações sobre lotes, resultados de testes, manuais (PDFs), imagens de amostras e laudos técnicos inseridos ativamente na plataforma.</li>
-      <li><strong>Logs de Acesso:</strong> Dados de auditoria que rastreiam quando e por quem uma informação foi modificada dentro do ambiente logado.</li>
+      <li><strong>Conta de usuário:</strong> nome, e-mail, nome de usuário, cargo (Analista ou Admin), situação da conta (ativa ou inativa), foto de perfil (opcional) e preferência de tema.</li>
+      <li><strong>Empresa cliente:</strong> nome, CNPJ, telefone, endereço e logotipo, usados no sistema e no cabeçalho dos laudos.</li>
+      <li><strong>Dados operacionais:</strong> testes, análises de pigmentos, lotes, resultados, manuais, FISPQs, fotos de amostras, anexos e laudos inseridos pela equipe.</li>
+      <li><strong>Registros de atividade:</strong> quem criou ou alterou cada registro, com data e hora.</li>
+      <li><strong>Registros de acesso:</strong> data, hora e endereço IP dos acessos ao sistema, mantidos pelo nosso provedor de autenticação.</li>
+      <li><strong>Chamados de suporte:</strong> nome do usuário e mensagem enviada pelo sistema.</li>
+      <li><strong>Visitantes do site:</strong> o site não tem formulários nem ferramentas de análise. Os servidores de hospedagem registram dados técnicos da conexão, como o endereço IP. Ao clicar em um botão de WhatsApp, a conversa acontece no WhatsApp, sob a política de privacidade da Meta.</li>
     </ul>
 
-    <h2>2. Como utilizamos os dados</h2>
-    <p>Utilizamos os dados exclusivamente para o funcionamento do sistema SaaS, permitindo que a sua equipe acesse históricos, gere laudos e audite alterações. <strong>O ForLabs não vende, não aluga e não compartilha</strong> os dados industriais e laboratoriais da sua empresa com terceiros para fins comerciais próprios deles. Os únicos terceiros envolvidos são os nossos operadores de infraestrutura (ver seção 3), que tratam os dados estritamente sob nossas instruções e contrato de confidencialidade, ou casos em que o compartilhamento seja exigido por lei ou ordem judicial.</p>
-
-    <h2>3. Onde os dados são armazenados</h2>
-    <p>As informações são mantidas em infraestrutura de nuvem de ponta (AWS/Supabase), com criptografia em trânsito e em repouso. Cada empresa cliente roda em um ambiente logicamente isolado, o que significa que um cliente jamais terá acesso aos dados de outro cliente da plataforma.</p>
-
-    <h2>4. Cookies e Tecnologias de Navegação</h2>
-    <p>Este site institucional utiliza fontes carregadas de serviços externos (Google Fonts) para exibição correta da interface, o que pode envolver o compartilhamento do endereço IP do visitante com o provedor do serviço. Não utilizamos cookies de rastreamento publicitário. Ao navegar por este site, você pode ajustar as permissões de dados de navegação diretamente nas configurações do seu navegador.</p>
-
-    <h2>5. Direitos do Titular (LGPD)</h2>
-    <p>A qualquer momento, o Administrador responsável pela conta da empresa pode:</p>
+    <h2>3. Para que usamos os dados e com qual base legal</h2>
     <ul>
-      <li>Acessar, corrigir ou inativar contas de usuários colaboradores.</li>
-      <li>Realizar o download completo do banco de dados (Dump em formato JSON/CSV).</li>
-      <li>Solicitar a exclusão definitiva e permanente de todos os dados do laboratório dos nossos servidores, caso decida cancelar o serviço.</li>
+      <li><strong>Prestar o serviço contratado</strong> (contas, registros do laboratório, laudos e suporte): execução de contrato (art. 7º, V, da LGPD).</li>
+      <li><strong>Segurança, auditoria e prevenção de fraudes</strong> (registros de atividade e de acesso): legítimo interesse (art. 7º, IX) e, para os registros de acesso, cumprimento de obrigação legal (art. 7º, II, e art. 15 do Marco Civil da Internet).</li>
+      <li><strong>Atender contatos comerciais e pedidos de teste:</strong> procedimentos preliminares a um contrato, a pedido do titular (art. 7º, V).</li>
+    </ul>
+    <p>O ForLabs não vende, não aluga e não usa os dados das empresas clientes para publicidade.</p>
+
+    <h2>4. Com quem compartilhamos</h2>
+    <p>Compartilhamos dados apenas com os fornecedores necessários ao funcionamento do serviço, que os tratam sob as nossas instruções:</p>
+    <ul>
+      <li><strong>Supabase</strong> (sobre a infraestrutura da Amazon Web Services): banco de dados, autenticação e armazenamento de arquivos.</li>
+      <li><strong>Vercel:</strong> hospedagem do sistema.</li>
+      <li><strong>GitHub:</strong> hospedagem do site institucional.</li>
+    </ul>
+    <p>Também podemos compartilhar dados quando houver obrigação legal ou ordem judicial.</p>
+
+    <h2>5. Onde os dados ficam e como os protegemos</h2>
+    <p>Os dados do sistema ficam armazenados na infraestrutura do Supabase, nos Estados Unidos (região us-east-2, Ohio), com criptografia em trânsito e em repouso. Cada empresa só acessa os próprios registros e arquivos, regra aplicada no próprio banco de dados; os anexos são abertos por links temporários; e as permissões variam conforme o cargo.</p>
+    <p>Como o banco de dados fica nos Estados Unidos e Supabase, Vercel e GitHub operam fora do Brasil, o tratamento envolve transferência internacional de dados, nos termos do art. 33 da LGPD.</p>
+
+    <h2>6. Por quanto tempo guardamos</h2>
+    <ul>
+      <li><strong>Dados da conta, da empresa e operacionais:</strong> enquanto o contrato estiver ativo. Após o cancelamento, ficam disponíveis para exportação por 30 dias e depois são excluídos definitivamente, salvo obrigação legal de guarda.</li>
+      <li><strong>Registros de acesso:</strong> por no mínimo 6 meses, conforme o art. 15 do Marco Civil da Internet.</li>
+      <li><strong>Usuários inativados:</strong> continuam vinculados aos registros que criaram ou alteraram, para preservar a trilha de auditoria da empresa.</li>
     </ul>
 
-    <h2>6. Encarregado de Dados (DPO)</h2>
-    <p>Para exercer os direitos listados acima ou esclarecer dúvidas sobre o tratamento de dados pessoais, o titular pode contatar o nosso Encarregado de Proteção de Dados (DPO) pelos canais oficiais de suporte da plataforma ForLabs.</p>
+    <h2>7. Cookies e armazenamento no navegador</h2>
+    <p>O site institucional não usa cookies, ferramentas de análise ou anúncios e não carrega fontes nem scripts de terceiros. O sistema usa o armazenamento local do navegador apenas para manter o usuário conectado (opção "Manter sessão").</p>
 
-    <h2>7. Contato</h2>
-    <p>Se você tiver alguma dúvida sobre a nossa Política de Privacidade ou sobre o tratamento dos dados da sua empresa, sinta-se à vontade para entrar em contato diretamente com a nossa equipe pelos canais oficiais de suporte na plataforma ForLabs.</p>
+    <h2>8. Direitos do titular</h2>
+    <p>Pela LGPD (art. 18), o titular pode solicitar: confirmação de que tratamos seus dados, acesso, correção, anonimização, bloqueio ou eliminação de dados desnecessários, portabilidade, informação sobre com quem os dados são compartilhados e revogação do consentimento, quando aplicável.</p>
+    <ul>
+      <li>Na empresa cliente, o Admin corrige os dados da equipe e inativa contas diretamente no sistema.</li>
+      <li>A exportação completa dos dados da empresa (CSV ou JSON) e a exclusão definitiva após o cancelamento são feitas pela nossa equipe, mediante solicitação.</li>
+      <li>Pedidos de colaboradores sobre dados inseridos pela empresa cliente devem ser feitos à própria empresa, que é a controladora; nós a auxiliamos no atendimento.</li>
+    </ul>
+
+    <h2>9. Encarregado de dados (DPO)</h2>
+    <p>Encarregado pelo tratamento de dados pessoais: Kaique Henrique Alves Mota, e-mail <a href="mailto:kaiqueham@gmail.com">kaiqueham@gmail.com</a>. As solicitações são respondidas nos prazos previstos na LGPD.</p>
+
+    <h2>10. Alterações nesta Política</h2>
+    <p>Esta Política pode ser atualizada para refletir mudanças no serviço ou na legislação. A data no topo indica a versão em vigor, e mudanças relevantes são comunicadas aos Admins das empresas clientes.</p>
+
+    <h2>11. Contato</h2>
+    <p>Dúvidas sobre esta Política podem ser enviadas ao encarregado, pelo e-mail acima, ou à nossa equipe pelo WhatsApp (16) 98215-7266.</p>
   </main>
 
   <footer class="p-footer">
