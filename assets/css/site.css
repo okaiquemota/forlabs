@@ -4,7 +4,7 @@
    acento e Inter. Os componentes vêm de base.css; aqui montamos a página.
    ========================================================================== */
 
-.p-body { font-size: 1.0625rem; }
+.p-body { font-size: 1rem; }
 
 /* ---------- Textos comuns ---------- */
 .p-eyebrow {
@@ -19,13 +19,15 @@
 }
 .p-num { color: var(--text-3); font-variant-numeric: tabular-nums; }
 .p-h2 {
-  font-size: clamp(2rem, 1.1rem + 2.4vw, 3.2rem);
+  font-size: clamp(1.7rem, 1rem + 1.9vw, 2.5rem);
   font-weight: 700;
-  letter-spacing: -0.035em;
-  line-height: 1.1;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  text-wrap: balance;
 }
+.p-h2 .p-dim { display: block; }
 .p-dim { color: var(--text-3); }
-.p-head { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; max-width: 820px; margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+.p-head { display: flex; flex-direction: column; align-items: flex-start; gap: 0.85rem; max-width: 760px; margin-bottom: clamp(2rem, 4vw, 3rem); }
 .p-head.is-center { align-items: center; text-align: center; margin-inline: auto; }
 .p-section { position: relative; padding-block: var(--section-y); }
 .p-section.is-white { background: var(--surface); border-block: 1px solid var(--line); }
@@ -53,19 +55,20 @@
   padding-bottom: clamp(2.5rem, 6vw, 4rem);
   background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
 }
-.p-hero-inner { display: flex; flex-direction: column; align-items: center; gap: clamp(1.25rem, 2.5vw, 1.75rem); text-align: center; }
+.p-hero-inner { display: flex; flex-direction: column; align-items: center; gap: clamp(1rem, 2vw, 1.4rem); text-align: center; }
 .p-display {
   max-width: 18ch;
-  font-size: clamp(2.4rem, 1.1rem + 4.4vw, 4.6rem);
+  font-size: clamp(2.1rem, 1rem + 3.4vw, 3.6rem);
   font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1.05;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  text-wrap: balance;
 }
 .p-display .p-accent { color: var(--primary); }
-.p-hero-lead { max-width: 60ch; color: var(--text-2); font-size: clamp(1.05rem, 1rem + 0.3vw, 1.2rem); }
+.p-hero-lead { max-width: 58ch; color: var(--text-2); font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem); }
 .p-hero-lead strong { color: var(--text); font-weight: 600; }
 .p-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-top: 0.5rem; }
-.p-fine { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.4rem; color: var(--text-3); font-size: 0.92rem; }
+.p-fine { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.4rem; color: var(--text-3); font-size: 0.875rem; }
 .p-fine li { display: inline-flex; align-items: center; gap: 0.4rem; }
 .p-fine i { color: var(--primary); font-size: 1.05rem; }
 @media (max-width: 479px) {
@@ -120,9 +123,9 @@
    ========================================================================== */
 .p-steps { display: grid; gap: var(--sp-5); }
 @media (min-width: 860px) { .p-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-.p-step { display: flex; flex-direction: column; gap: 0.75rem; padding: clamp(1.5rem, 2.5vw, 2rem); border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); }
+.p-step { display: flex; flex-direction: column; gap: 0.6rem; padding: clamp(1.25rem, 2vw, 1.6rem); border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); }
 .p-step-n { color: var(--primary); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
-.p-step h3 { font-size: clamp(1.2rem, 1.05rem + 0.5vw, 1.45rem); font-weight: 650; letter-spacing: -0.02em; }
+.p-step h3 { font-size: clamp(1.1rem, 1rem + 0.35vw, 1.28rem); font-weight: 650; letter-spacing: -0.02em; }
 .p-step p { color: var(--text-2); }
 
 /* ==========================================================================
@@ -135,7 +138,7 @@
 .p-chapter { display: flex; flex-direction: column; gap: 1.2rem; }
 .p-chapter-tag { display: inline-flex; align-items: center; gap: 0.9rem; color: var(--primary); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
 .p-chapter-tag b { color: var(--text-3); font-weight: 500; letter-spacing: 0.08em; }
-.p-chapter h3 { font-size: clamp(1.6rem, 1.2rem + 1.3vw, 2.3rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.12; }
+.p-chapter h3 { font-size: clamp(1.4rem, 1.1rem + 0.9vw, 1.9rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.12; }
 .p-chapter-media { margin-top: var(--sp-4); }
 
 .p-checks { display: grid; border-top: 1px solid var(--line); }
@@ -155,7 +158,7 @@
 .p-duo { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 6%; width: min(520px, 100%); margin-inline: auto; }
 
 @media (min-width: 1000px) {
-  .p-chapters-grid { grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr); gap: clamp(3rem, 6vw, 6rem); }
+  .p-chapters-grid { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(2.5rem, 5vw, 4.5rem); }
   .p-chapters-stage {
     position: sticky;
     top: calc(var(--header-h) + 6vh);
@@ -167,7 +170,7 @@
     max-height: 760px;
   }
   .p-chapter-list { grid-column: 1; grid-row: 1; gap: 0; }
-  .p-chapter { min-height: 82vh; justify-content: center; transition: opacity 0.5s var(--ease); }
+  .p-chapter { min-height: 72vh; justify-content: center; transition: opacity 0.5s var(--ease); }
   .js .p-chapter:not(.is-active) { opacity: 0.3; }
   .p-chapter-media { display: none; }
 
@@ -184,7 +187,7 @@
   }
   .p-frame.is-active { opacity: 1; transform: none; }
   .p-frame.is-past { transform: translateY(-16px); }
-  .p-frame .p-browser { width: 122%; max-width: none; }
+  .p-frame .p-browser { width: 100%; }
   .p-frame .p-duo { width: min(70%, 52vh); justify-self: center; }
   .p-stage-dots { position: absolute; left: 0; bottom: -6px; display: flex; gap: 6px; }
   .p-stage-dots span { width: 28px; height: 3px; border-radius: 3px; background: var(--line-strong); transition: background-color 0.4s, width 0.4s var(--ease-out); }
@@ -215,7 +218,7 @@
 }
 .p-tile-art { position: relative; flex: 1 1 auto; display: grid; place-items: center; min-height: 210px; padding: 26px 24px; background: var(--surface-2); border-bottom: 1px solid var(--line); }
 .p-tile-copy { display: grid; gap: 0.4rem; padding: 20px 24px 24px; }
-.p-tile h3 { font-size: 1.15rem; font-weight: 650; letter-spacing: -0.02em; }
+.p-tile h3 { font-size: 1.06rem; font-weight: 650; letter-spacing: -0.02em; }
 .p-tile p { max-width: 46ch; color: var(--text-2); font-size: 0.96rem; }
 .p-mini { width: 100%; max-width: 520px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); box-shadow: 0 16px 32px -28px rgba(11, 21, 48, 0.5); }
 
@@ -286,7 +289,7 @@
 .p-uses { border-top: 1px solid var(--line); }
 .p-use { display: grid; gap: 0.5rem 2rem; padding: clamp(1.4rem, 3vw, 2rem) 0; border-bottom: 1px solid var(--line); }
 @media (min-width: 860px) { .p-use { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); align-items: baseline; } }
-.p-use h3 { font-size: clamp(1.25rem, 1.05rem + 0.6vw, 1.6rem); font-weight: 650; letter-spacing: -0.025em; }
+.p-use h3 { font-size: clamp(1.12rem, 1rem + 0.4vw, 1.35rem); font-weight: 650; letter-spacing: -0.025em; }
 .p-use p { color: var(--text-2); max-width: 54ch; }
 
 /* ==========================================================================
@@ -320,9 +323,9 @@
   justify-content: space-between;
   gap: var(--sp-4);
   padding: 1.3rem 0;
-  font-size: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.08rem);
   font-weight: 600;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   line-height: 1.3;
   cursor: pointer;
   list-style: none;
@@ -352,13 +355,13 @@
    ========================================================================== */
 .p-final {
   margin: calc(var(--section-y) * 0.4) var(--gutter) 0;
-  padding-block: clamp(4rem, 9vw, 6.5rem);
+  padding-block: clamp(3rem, 7vw, 5rem);
   border-radius: var(--radius-xl);
   background: var(--ink);
   color: #fff;
 }
 .p-final-inner { display: flex; flex-direction: column; align-items: center; gap: 1.25rem; text-align: center; }
-.p-final-title { max-width: 22ch; font-size: clamp(1.9rem, 1.1rem + 2.4vw, 3rem); font-weight: 700; letter-spacing: -0.035em; line-height: 1.12; }
+.p-final-title { max-width: 24ch; font-size: clamp(1.6rem, 1rem + 1.8vw, 2.4rem); text-wrap: balance; font-weight: 700; letter-spacing: -0.035em; line-height: 1.12; }
 .p-final p { max-width: 52ch; color: rgba(255, 255, 255, 0.78); font-size: clamp(1.02rem, 1rem + 0.2vw, 1.12rem); }
 .p-final .p-ctas { margin-top: 0.5rem; }
 .p-final ::selection { background: #fff; color: var(--ink); }
