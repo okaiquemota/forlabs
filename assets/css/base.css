@@ -33,7 +33,6 @@
   /* Azul do sistema: --blue é o tom da marca (decorativo); --primary é o
      tom de botões e links, um pouco mais escuro para manter o contraste. */
   --blue: #2994f2;
-  --violet: #7c5cf6;
   --primary: #176bd0;
   --primary-ink: #ffffff;
   --primary-hover: #1460bb;
@@ -158,9 +157,9 @@ h1, h2, h3, h4 { line-height: 1.1; text-wrap: balance; }
   --btn-bg: var(--primary);
   --btn-fg: var(--primary-ink);
   --btn-bd: var(--primary);
-  box-shadow: 0 10px 28px -12px rgba(23, 107, 208, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  box-shadow: 0 1px 2px rgba(11, 21, 48, 0.12);
 }
-.btn-primary:hover { --btn-bg: var(--primary-hover); --btn-bd: var(--primary-hover); box-shadow: 0 16px 36px -14px rgba(23, 107, 208, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.2); }
+.btn-primary:hover { --btn-bg: var(--primary-hover); --btn-bd: var(--primary-hover); }
 .btn-outline { --btn-bg: transparent; }
 .btn-outline:hover { --btn-bd: var(--primary); --btn-fg: var(--primary); }
 .btn-ghost { --btn-bg: transparent; --btn-bd: transparent; --btn-fg: var(--text-2); }
@@ -173,7 +172,7 @@ h1, h2, h3, h4 { line-height: 1.1; text-wrap: balance; }
 /* ---------- Marca ---------- */
 .p-brand { display: inline-flex; align-items: center; gap: 0.6rem; color: var(--text); }
 .p-brand img { width: 32px; height: 32px; border-radius: 9px; }
-.p-brand-name { font-weight: 800; font-size: 1.22rem; line-height: 1; letter-spacing: -0.035em; }
+.p-brand-name { font-weight: 700; font-size: 1.2rem; line-height: 1; letter-spacing: -0.03em; }
 .p-brand-name span { font-weight: 400; color: var(--text-2); }
 
 /* ---------- Cabeçalho ---------- */
@@ -241,9 +240,9 @@ h1, h2, h3, h4 { line-height: 1.1; text-wrap: balance; }
   justify-content: space-between;
   padding: 0.9rem 0;
   border-bottom: 1px solid var(--line);
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 .p-sheet a i { font-size: 1rem; color: var(--text-3); }
 .p-header.is-open .p-sheet a { animation: p-up 0.5s var(--ease-out) both; }
@@ -255,14 +254,14 @@ h1, h2, h3, h4 { line-height: 1.1; text-wrap: balance; }
 @keyframes p-up { from { opacity: 0; transform: translateY(14px); } }
 @media (min-width: 1000px) { .p-sheet { display: none !important; } }
 
-/* Progresso de leitura: a pipeta enchendo no pé do cabeçalho */
+/* Progresso de leitura no pé do cabeçalho */
 .p-progress { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; overflow: hidden; pointer-events: none; }
 .p-progress span {
   display: block;
   height: 100%;
   transform-origin: 0 50%;
   transform: scaleX(var(--progress, 0));
-  background: linear-gradient(90deg, var(--blue), var(--violet));
+  background: var(--primary);
 }
 
 /* ---------- Planos ---------- */
@@ -280,35 +279,25 @@ h1, h2, h3, h4 { line-height: 1.1; text-wrap: balance; }
   gap: 1.3rem;
   padding: clamp(1.6rem, 2.5vw, 2.25rem);
   border: 1px solid var(--line);
-  border-radius: 26px;
+  border-radius: var(--radius-lg);
   background: var(--surface);
-  box-shadow: 0 30px 60px -40px rgba(11, 21, 48, 0.35);
+  box-shadow: 0 24px 48px -40px rgba(11, 21, 48, 0.35);
 }
-.plan-card.is-featured { border-color: var(--primary-line); box-shadow: 0 40px 80px -44px rgba(23, 107, 208, 0.6); }
-.plan-card.is-featured::before {
-  content: '';
-  position: absolute;
-  left: 2.25rem;
-  right: 2.25rem;
-  top: 0;
-  height: 5px;
-  border-radius: 0 0 6px 6px;
-  background: linear-gradient(90deg, var(--blue), var(--violet));
-}
+.plan-card.is-featured { border-color: var(--primary-line); border-top: 3px solid var(--primary); }
 .plan-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 0.6rem 1rem; }
-.plan-name { font-size: 2rem; font-weight: 800; letter-spacing: -0.045em; line-height: 1; }
+.plan-name { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; }
 .plan-tag { padding: 4px 10px; border-radius: 99px; background: var(--primary-soft); color: var(--primary); font-size: 0.72rem; font-weight: 650; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
 .plan-price { display: flex; align-items: flex-start; gap: 0.15rem; }
 .plan-price .cur { margin-top: 0.55em; color: var(--text-2); font-weight: 600; }
-.plan-price strong { font-size: clamp(3rem, 2rem + 2.6vw, 4.4rem); font-weight: 800; letter-spacing: -0.06em; line-height: 0.9; font-variant-numeric: tabular-nums; }
+.plan-price strong { font-size: clamp(2.6rem, 2rem + 2vw, 3.6rem); font-weight: 700; letter-spacing: -0.04em; line-height: 0.95; font-variant-numeric: tabular-nums; }
 .plan-price .cents { display: grid; margin-top: 0.4em; font-size: 1.15rem; font-weight: 700; line-height: 1.1; }
 .plan-price .cents small { color: var(--text-3); font-size: 0.78rem; font-weight: 500; }
-.plan-price.is-quote strong { font-size: clamp(2.4rem, 1.6rem + 2.2vw, 3.4rem); letter-spacing: -0.05em; line-height: 1; }
+.plan-price.is-quote strong { font-size: clamp(1.9rem, 1.5rem + 1.4vw, 2.5rem); letter-spacing: -0.03em; line-height: 1.1; }
 .plan-per { margin-top: -0.6rem; color: var(--text-3); font-size: 0.92rem; }
 .plan-actions { display: grid; gap: 0.6rem; margin-top: auto; }
 
 /* ---------- Rodapé ---------- */
-.p-footer { position: relative; overflow: hidden; padding-top: clamp(4rem, 8vw, 6rem); color: var(--text-3); font-size: var(--fs-sm); }
+.p-footer { position: relative; padding-top: clamp(4rem, 8vw, 6rem); color: var(--text-3); font-size: var(--fs-sm); }
 .p-footer-top { display: grid; gap: var(--sp-6); padding-bottom: var(--sp-7); }
 @media (min-width: 800px) { .p-footer-top { grid-template-columns: 1fr auto; } }
 .p-footer-brand { display: grid; gap: 1rem; align-content: start; }
@@ -322,20 +311,6 @@ h1, h2, h3, h4 { line-height: 1.1; text-wrap: balance; }
 .p-footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.6rem; padding-block: var(--sp-5); border-top: 1px solid var(--line); }
 .p-footer-bottom a { color: var(--text-2); font-weight: 600; }
 .p-footer-bottom a:hover { color: var(--primary); }
-.p-wordmark {
-  margin-bottom: -0.18em;
-  font-size: calc(100vw / 4.6);
-  font-weight: 900;
-  letter-spacing: -0.07em;
-  line-height: 0.82;
-  text-align: center;
-  white-space: nowrap;
-  user-select: none;
-  background: linear-gradient(180deg, var(--surface-3) 10%, transparent 82%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
 
 /* ---------- Menos movimento ---------- */
 @media (prefers-reduced-motion: reduce) {
