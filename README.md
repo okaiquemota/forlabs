@@ -32,7 +32,7 @@ CNAME                     domínio customizado do GitHub Pages
 
 ## Identidade
 
-Claro de bancada, papel milimetrado ao fundo e o azul do sistema (`#2994F2`) como acento; botões e links usam um tom um pouco mais escuro (`#176BD0`) para manter o contraste. Fonte Inter. No rodapé, "Um produto MovCode".
+Sóbria e empresarial: fundo claro, o azul do sistema (`#2994F2`) como único acento e fonte Inter, sem elementos decorativos. Botões e links usam um tom um pouco mais escuro (`#176BD0`) para manter o contraste. No rodapé, "Um produto MovCode".
 
 ## Telas do sistema
 
